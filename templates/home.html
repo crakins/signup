@@ -1,16 +1,49 @@
+{% load staticfiles %}
 <!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
-<head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Tarrant Makers</title>
-  <link rel="stylesheet" href="/css/foundation.css" />
-  <script src="js/vendor/custom.modernizr.js"></script>
-</head>
-
-<body>
-homepage template
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>signuptarrantmakers</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/webflow.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signuptarrantmakers.webflow.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Oswald:300,400,700"]
+        }
+      });
+    </script>
+    <link rel="icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+    <script type="text/javascript" src="{% static 'js/webflow.js' %}" defer></script>
+  </head><body>
+  <div class="header">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-6 w-clearfix">
+          <img class="logo" src="{% static 'images/TarrantMakers-logo2-white_for_tee_shirt.png' %}">
+        </div>
+        <div class="w-col w-col-6 w-clearfix">
+          <div class="aboutus">Tarrant Makers is a community of creative types from all backgrounds living or working in and around Tarrant County, Texas.
+            <br>
+            <br>Our ranks include artists, programmers, hardware hackers and "Do-It-Yourselfers" of all kinds.
+            <br>
+            <br>Sign up to keep informed as we establish a local MAKERSPACE where you can make, learn, create, and collaborate in a shared workspace.</div>
+          <div class="w-container buttoncontainer"><a class="button" href="forms/sign-up/">Sign Up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-clearfix social">
+    <div class="w-container socialcontain">
+      <a href="https://www.facebook.com/FortWorthMakerSpace"><img src="{% static 'images/facebook.png' %}" alt="facebook.png"></a>
+      <a href="http://www.meetup.com/Tarrant-Makers/"><img src="{% static 'images/meetup.png' %}" alt="meetup.png"></a>
+      <a href="https://twitter.com/FWMakerspace"><img src="{% static 'images/twitter.png' %}" alt="twitter.png"></a>
+    </div>
+  </div>
 </body>
 </html>
