@@ -1,0 +1,9 @@
+Django==1.5.1
+South==0.8.2
+Unidecode==0.04.13
+argparse==1.2.1
+django-email-extras==0.1.12
+django-forms-builder==0.8.5
+python-gnupg==0.3.4
+sphinx-me==0.1.2
+wsgiref==0.1.2
